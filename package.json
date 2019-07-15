@@ -1,0 +1,25 @@
+{
+  "name": "http-url-query",
+  "version": "1.0.1",
+  "description": "Create URL query string for provided object",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rrpatilcse/http-url-query.git"
+  },
+  "keywords": [
+    "query-builder",
+    "url-query-builder",
+    "build-url-query",
+    "http-url-query"
+  ],
+  "author": "Rahul Patil <rahulp884@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rrpatilcse/http-url-query/issues"
+  },
+  "homepage": "https://github.com/rrpatilcse/http-url-query#readme"
+}
