@@ -1,6 +1,6 @@
 {
   "name": "http-url-query",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Create URL query string for provided object",
   "main": "index.js",
   "scripts": {
