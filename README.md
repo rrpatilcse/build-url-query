@@ -29,6 +29,20 @@ let queryObject = {
 let queryOfArrayElements = QueryBuilder.buildQuery(queryObject);
 console.log(queryOfArrayElements);
 //?name=Rahul&id=213654-abc12-564ds-sa456sd&skill=nodejs&skill=hapi&skill=express&skill=orientDB
+
+queryOfArrayElements = QueryBuilder.buildQuery(queryObject, { repeatedKeyWithBracket: true });
+console.log(queryOfArrayElements);
+//?name=Rahul&id=213654-abc12-564ds-sa456sd&skill[]=nodejs&skill[]=hapi&skill[]=express&skill[]=orientDB
+
+queryOfArrayElements = QueryBuilder.buildQuery(queryObject, { commaSeparatedList: true });
+console.log(queryOfArrayElements);
+//?name=Rahul&id=213654-abc12-564ds-sa456sd&skill=nodejs,hapi,express,orientDB
+
+queryOfArrayElements = QueryBuilder.buildQuery(queryObject, { invalidKey: true });
+console.log(queryOfArrayElements);
+//?name=Rahul&id=213654-abc12-564ds-sa456sd&skill=nodejs&skill=hapi&skill=express&skill=orientDB
+
+
 console.log(QueryBuilder.buildQuery(null));                 //empty string
 console.log(QueryBuilder.buildQuery(undefined));            //empty string
 console.log(QueryBuilder.buildQuery(['some elements']));    //empty string
